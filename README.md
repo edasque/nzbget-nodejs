@@ -9,36 +9,38 @@ It's a simple [NZBGet](http://nzbget.net/) JSON-RPC API wrapper for node.js
 
 ## Usage
 
-    var nzbget = require('nzbget-nodejs');
-    var my_ng = new nzbget({
-      host: "my.host.com",
-      port: 6789,
-      username: 'admin',
-      password: 'mypassword',
-    });
+```javascript
+var nzbget = require('nzbget-nodejs');
+var my_ng = new nzbget({
+  host: "my.host.com",
+  port: 6789,
+  username: 'admin',
+  password: 'mypassword',
+});
 
-    var generic_handling= function(err, res){
-        if (err) {
-          console.log(err);
-        } else {
-          console.log(res);
-        }
+var generic_handling= function(err, res){
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(res);
     }
+}
 
-    my_ng.version(generic_handling);
+my_ng.version(generic_handling);
 
-    my_ng.status(generic_handling);
+my_ng.status(generic_handling);
 
-    my_ng.history(generic_handling);
+my_ng.history(generic_handling);
 
-    var appendOptions =
-    {
-      Content: "https://url.to/file.nzb",
-      Category: "Open Source",
-    };
+var appendOptions =
+{
+  Content: "https://url.to/file.nzb",
+  Category: "Open Source",
+};
 
-    my_ng.append(appendOptions,generic_handling)
-    snow_ng.append("https://url.to/file.nzb","Open Source",generic_handling);
+my_ng.append(appendOptions,generic_handling)
+snow_ng.append("https://url.to/file.nzb","Open Source",generic_handling);
+```
 
 ## Tests
 
