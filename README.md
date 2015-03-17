@@ -39,7 +39,7 @@ var appendOptions =
 };
 
 my_ng.append(appendOptions,generic_handling)
-snow_ng.append("https://url.to/file.nzb","Open Source",generic_handling);
+my_ng.append("https://url.to/file.nzb","Open Source",generic_handling);
 ```
 
 ## Tests
