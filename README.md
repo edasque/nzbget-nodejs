@@ -1,7 +1,7 @@
 NZBGet-nodejs
 ======================
 ## What is nzbget-nodejs?
-It's a simple [NZBGet](http://nzbget.net/) JSON-RPC (API)[http://nzbget.net/RPC_API_reference] wrapper for node.js
+It's a simple [NZBGet](http://nzbget.net/) JSON-RPC [API](http://nzbget.net/RPC_API_reference) wrapper for node.js
 
 It currently supports, using JSON-RPC methods with and without parameters:
 - version
