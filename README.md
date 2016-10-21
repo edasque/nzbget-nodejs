@@ -1,5 +1,8 @@
 NZBGet-nodejs
 ======================
+
+[![npm](https://img.shields.io/npm/dm/nzbget-nodejs.svg)]() [![npm](https://img.shields.io/npm/dt/nzbget-nodejs.svg)]()
+
 ## What is nzbget-nodejs?
 It's a simple [NZBGet](http://nzbget.net/) JSON-RPC [API](http://nzbget.net/RPC_API_reference) wrapper for node.js
 
